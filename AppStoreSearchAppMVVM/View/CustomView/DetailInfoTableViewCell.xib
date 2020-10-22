@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailInfoTableViewCell" rowHeight="70" id="2PB-Il-3IU" customClass="DetailInfoTableViewCell" customModule="AppStoreSearchAppMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2PB-Il-3IU" id="iol-5H-3cM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8el-cN-JjV">
+                        <rect key="frame" x="0.0" y="6" width="150" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="LCc-2p-uaI"/>
+                            <constraint firstAttribute="height" constant="20" id="tPg-kb-x2B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeN-ef-KCu">
+                        <rect key="frame" x="160" y="7" width="254" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pO7-Ir-lbV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gvb-Jn-Csx">
+                        <rect key="frame" x="394" y="5" width="20" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="OOD-F7-xux"/>
+                            <constraint firstAttribute="width" constant="20" id="d1R-BN-At6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8el-cN-JjV" firstAttribute="leading" secondItem="iol-5H-3cM" secondAttribute="leading" id="6wV-Mr-hIO"/>
+                    <constraint firstAttribute="trailing" secondItem="gvb-Jn-Csx" secondAttribute="trailing" id="HyH-nB-gaP"/>
+                    <constraint firstItem="8el-cN-JjV" firstAttribute="top" secondItem="iol-5H-3cM" secondAttribute="top" constant="6" id="PC6-Bs-bZc"/>
+                    <constraint firstItem="TeN-ef-KCu" firstAttribute="centerY" secondItem="8el-cN-JjV" secondAttribute="centerY" id="U09-Jj-XCG"/>
+                    <constraint firstItem="TeN-ef-KCu" firstAttribute="leading" secondItem="8el-cN-JjV" secondAttribute="trailing" constant="10" id="pbm-NQ-fGk"/>
+                    <constraint firstAttribute="trailing" secondItem="TeN-ef-KCu" secondAttribute="trailing" id="u57-A3-qxI"/>
+                    <constraint firstItem="gvb-Jn-Csx" firstAttribute="centerY" secondItem="8el-cN-JjV" secondAttribute="centerY" id="zXc-r8-vOM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="subImageView" destination="gvb-Jn-Csx" id="k8v-N5-soW"/>
+                <outlet property="subTitleLabel" destination="TeN-ef-KCu" id="ihi-dy-SJh"/>
+                <outlet property="subTitleLabelTrailingConstraint" destination="u57-A3-qxI" id="qEM-XD-pxW"/>
+                <outlet property="titleLabel" destination="8el-cN-JjV" id="DUX-xT-KpF"/>
+            </connections>
+            <point key="canvasLocation" x="-259.4202898550725" y="43.526785714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
+</document>

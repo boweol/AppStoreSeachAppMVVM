@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_AppStoreSearchAppMVVM_AppStoreSearchAppMVVMUITests : NSObject
+@end
+@implementation PodsDummy_Pods_AppStoreSearchAppMVVM_AppStoreSearchAppMVVMUITests
+@end
